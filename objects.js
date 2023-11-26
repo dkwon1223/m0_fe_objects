@@ -14,19 +14,24 @@ var foods = {
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.keys(foods));
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(foods.grapes);
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
+foods.chips = 17;
 
+console.log(foods);
 
 // -------------------
 // Part 2: Email
@@ -38,17 +43,26 @@ var foods = {
 
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+var email = {
+  sender: "AlanTuring@Turing.edu",
+  receiver: "ClassMate@Turing.edu",
+  ccRecipient: "TuringInstructor@Turing.edu",
+  subject: "Excited for Turing!",
+  messageContent: "Hello, I'm so excited to begin our journey at Turing!",
+  attachedFiles: ".images/excitedGuy.gif",
+}
 // Write code that logs your email object to the terminal.
-
+console.log(email);
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.keys(email));
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.values(email));
 
 
 // -------------------
@@ -61,7 +75,7 @@ var foods = {
 // Check out the following example of an array of Instagram posts:
 
 
-var posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"];
+//var posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"];
 
 
 // An Array of Objects is probably more realistic. Objects are a data type that's great
@@ -69,25 +83,25 @@ var posts = ["image at beach", "holiday party", "adorable puppy", "video of cute
 // that relate to each individual Instagram post:
 
 
-posts = [
-  {
-    imageSrc: "./images/beach.png",
-    caption: "At the beach with my besties",
-    timestamp: "4:37 PM August 13, 2019",
-    number_likes: 0,
-    comments: []
-  }, 
-  {
-    imageSrc: "./images/holiday-party.png",
-    caption: "What a great holiday party omg",
-    timestamp: "11:37 PM December 31, 2019",
-    number_likes: 13,
-    comments: []
-  }
-];
+// posts = [
+//   {
+//     imageSrc: "./images/beach.png",
+//     caption: "At the beach with my besties",
+//     timestamp: "4:37 PM August 13, 2019",
+//     number_likes: 0,
+//     comments: []
+//   }, 
+//   {
+//     imageSrc: "./images/holiday-party.png",
+//     caption: "What a great holiday party omg",
+//     timestamp: "11:37 PM December 31, 2019",
+//     number_likes: 13,
+//     comments: []
+//   }
+// ];
 
-console.log(posts);
-console.log(posts[0]);
+// console.log(posts);
+// console.log(posts[0]);
 
 
 // The code snippet above shows an Array with 2 elements. Each element in the Array is a 
@@ -99,3 +113,31 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+var emails = [
+  {
+    sender: "AlanTuring@Turing.edu",
+    receiver: "ClassMate1@Turing.edu",
+    ccRecipient: "TuringInstructor@Turing.edu",
+    subject: "Excited for Turing!",
+    messageContent: "Hello, I'm so excited to begin our journey at Turing!",
+    attachedFiles: ".images/excitedGuy.gif",
+  },
+  {
+    sender: "AlanTuring@Turing.edu",
+    receiver: "ClassMate2@Turing.edu",
+    ccRecipient: "TuringInstructor@Turing.edu",
+    subject: "Homework Help",
+    messageContent: "Hey peer, did you get a chance to finish the Mod 0 Gist? I'm struggling and was wondering if you could help me. Thanks!",
+    attachedFiles: ".images/worriedGuy.gif",
+  },
+  {
+    sender: "AlanTuring@Turing.edu",
+    receiver: "ClassMate3@Turing.edu",
+    ccRecipient: "TuringInstructor@Turing.edu",
+    subject: "Project Partner",
+    messageContent: "Hey peer, I feel that we work really well together and was wondering if you want to be my Mod 1 project partner! I have attached my project proposal so you can see if it's something you're interested in collaborating on. Thanks.",
+    attachedFiles: "Turing_Alan_projectProposal.pdf",
+  }
+];
+
+console.log(emails);
